@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DECE5EB1-EA11-46A6-89FE-3077AF070ED9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>coal_managment_application</RootNamespace>
+    <AssemblyName>coal managment application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\New folder\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/coal managment application/</UpdateUrl>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0A0F400B29A1763B171790635679AAB120D35911</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TestCodeSigningCert.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminexpensereport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminexpensereport.Designer.cs">
+      <DependentUpon>adminexpensereport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administratormenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administratormenu.Designer.cs">
+      <DependentUpon>administratormenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminsalesreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminsalesreport.Designer.cs">
+      <DependentUpon>adminsalesreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminstockreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminstockreport.Designer.cs">
+      <DependentUpon>adminstockreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assigndutyform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assigndutyform.Designer.cs">
+      <DependentUpon>assigndutyform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="backupform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backupform.Designer.cs">
+      <DependentUpon>backupform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chartform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartform.Designer.cs">
+      <DependentUpon>chartform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="expensereportform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expensereportform.Designer.cs">
+      <DependentUpon>expensereportform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iqbalcoalmngDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>iqbalcoalmngDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ownermenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ownermenu.Designer.cs">
+      <DependentUpon>ownermenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectConnection.cs" />
+    <Compile Include="salesreportform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesreportform.Designer.cs">
+      <DependentUpon>salesreportform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondForm.Designer.cs">
+      <DependentUpon>SecondForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stockreportform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockreportform.Designer.cs">
+      <DependentUpon>stockreportform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="financereport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="financereport.Designer.cs">
+      <DependentUpon>financereport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transactionandcashform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transactionandcashform.Designer.cs">
+      <DependentUpon>transactionandcashform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminexpensereport.resx">
+      <DependentUpon>adminexpensereport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administratormenu.resx">
+      <DependentUpon>administratormenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminsalesreport.resx">
+      <DependentUpon>adminsalesreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminstockreport.resx">
+      <DependentUpon>adminstockreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assigndutyform.resx">
+      <DependentUpon>assigndutyform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backupform.resx">
+      <DependentUpon>backupform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chartform.resx">
+      <DependentUpon>chartform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expensereportform.resx">
+      <DependentUpon>expensereportform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ownermenu.resx">
+      <DependentUpon>ownermenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="salesreportform.resx">
+      <DependentUpon>salesreportform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondForm.resx">
+      <DependentUpon>SecondForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockreportform.resx">
+      <DependentUpon>stockreportform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="financereport.resx">
+      <DependentUpon>financereport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transactionandcashform.resx">
+      <DependentUpon>transactionandcashform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="coal managment application_TemporaryKey.pfx" />
+    <None Include="iqbalcoalmngDataSet.xsc">
+      <DependentUpon>iqbalcoalmngDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iqbalcoalmngDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>iqbalcoalmngDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="iqbalcoalmngDataSet.xss">
+      <DependentUpon>iqbalcoalmngDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TestCodeSigningCert.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\pexels-pixabay-48884.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\coal-miners-day.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\chris-leboutillier-TUJud0AWAPI-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons8-circled-menu-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\stocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\supplies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\expense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\add-contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\assign_duty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\power-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\synchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\iqbalcoalmng.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\iqbalcoalmng_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>iqbalcoalmng.mdf</DependentUpon>
+    </Content>
+    <None Include="Properties\analysis.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
